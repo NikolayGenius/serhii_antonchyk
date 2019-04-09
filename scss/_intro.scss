@@ -1,0 +1,42 @@
+@import "./mixins/fonts-themes";
+
+.intro_container {
+  width: 100%;
+  height: calc(100vh - 108px);
+  max-height: 950px;
+  background: url("../img/header-bg.jpg") 100% 0 no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 992px) {
+    height: calc(100vh - 250px);
+  }
+  .title_wrapper {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media screen and (max-width: 992px) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.title {
+  @include segoe(80px, #fff);
+  text-transform: uppercase;
+  @media screen and (max-width: 992px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
+}
+
+.button-wrapper {
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}

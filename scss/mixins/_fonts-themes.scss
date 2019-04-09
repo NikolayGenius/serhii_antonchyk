@@ -1,0 +1,15 @@
+@import "../fonts";
+
+@mixin myriad($font-size, $color) {
+  font-family: "MyriadPro-Regular";
+  font-size: $font-size;
+  color: $color;
+  font-weight: 400;
+}
+
+@mixin segoe($font-size, $color) {
+  font-family: "SegoeUI-SemiBold";
+  font-size: $font-size;
+  color: $color;
+  font-weight: 600;
+}
